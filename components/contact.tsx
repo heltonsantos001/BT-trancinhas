@@ -27,11 +27,11 @@ export function Contact() {
             </CardHeader>
             <CardContent>
               <p className="text-gray-600">
-                Rua das Flores, 123
+               Rua general bento Gonçalves, 20
                 <br />
-                Centro - São Paulo/SP
+                20 - Pulista/PE
                 <br />
-                CEP: 01234-567
+                CEP: 53413470
               </p>
             </CardContent>
           </Card>
@@ -45,15 +45,15 @@ export function Contact() {
             </CardHeader>
             <CardContent>
               <p className="text-gray-600">
-                (11) 99999-9999
+                (81) 98618-2451
                 <br />
                 WhatsApp disponível
                 <br />
-                Segunda a Sábado
+                Segunda a Domingo
               </p>
               <Button
                 className="mt-4 bg-green-500 hover:bg-green-600"
-                onClick={() => window.open("https://wa.me/5511999999999", "_blank")}
+                onClick={() => window.open("https://wa.me/5581986182451", "_blank")}
               >
                 WhatsApp
               </Button>
@@ -73,7 +73,7 @@ export function Contact() {
                 <br />
                 Sábado: 8h às 17h
                 <br />
-                Domingo: Fechado
+                Domingo: 13h às 18h
               </p>
             </CardContent>
           </Card>
@@ -88,6 +88,7 @@ export function Contact() {
             <CardContent>
               <p className="text-gray-600 mb-4">Siga-nos para ver nossos trabalhos</p>
               <div className="flex justify-center gap-4">
+                <a href="https://www.instagram.com/bt_trancinhas?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
                 <Button
                   size="sm"
                   variant="outline"
@@ -95,6 +96,7 @@ export function Contact() {
                 >
                   <Instagram className="w-4 h-4" />
                 </Button>
+                </a>
                 <Button
                   size="sm"
                   variant="outline"
