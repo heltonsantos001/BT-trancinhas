@@ -8,7 +8,7 @@ export function Footer() {
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <div className="w-8 h-8 bg-gradient-to-r from-purple-300 to-violet-400 rounded-full"></div>
-              <h3 className="text-xl font-bold">Tranças Divinas</h3>
+              <h3 className="text-xl font-bold">BT Trancinhas</h3>
             </div>
             <p className="text-purple-200">
               Especialistas em tranças afro, realçando sua beleza natural com carinho e profissionalismo.
@@ -49,9 +49,9 @@ export function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Contato</h4>
             <div className="space-y-2 text-purple-200">
-              <p>Rua das Flores, 123 - Centro</p>
-              <p>São Paulo/SP - CEP: 01234-567</p>
-              <p>(11) 99999-9999</p>
+              <p>Rua general bento Gonçalves, 20 - A</p>
+              <p>Paulista/PE - CEP: 53413470</p>
+              <p>(81) 98618-2451</p>
               <p>contato@trancasdivinas.com.br</p>
             </div>
           </div>
@@ -59,7 +59,7 @@ export function Footer() {
 
         <div className="border-t border-purple-700 mt-8 pt-8 text-center">
           <p className="text-purple-200 flex items-center justify-center gap-2">
-            Feito com <Heart className="w-4 h-4 text-red-400" /> por Tranças Divinas © 2024
+            Feito com <Heart className="w-4 h-4 text-red-400" /> por Helton Santos © 2025
           </p>
         </div>
       </div>
