@@ -68,12 +68,10 @@ export function Contact() {
               <CardTitle className="text-lg text-purple-800">Horários</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-gray-600">
-                Segunda a Sexta: 9h às 18h
-                <br />
+              <p className="text-gray-600">             
                 Sábado: 8h às 17h
                 <br />
-                Domingo: 13h às 18h
+                Domingo: 14h às 18h
               </p>
             </CardContent>
           </Card>

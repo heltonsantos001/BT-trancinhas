@@ -3,6 +3,8 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
+import Image from "next/image"
+import Logo from "../img/logo.png"
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -20,9 +22,9 @@ export function Header() {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-violet-600 rounded-full"></div>
+           <Image src={Logo} style={{width:"50px", height:"50px", borderRadius:"50%",}}alt="logo do site" />
             <h1 className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-violet-700 bg-clip-text text-transparent">
-              Tranças Divinas
+              BT Trancinhas
             </h1>
           </div>
 

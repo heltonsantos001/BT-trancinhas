@@ -35,7 +35,7 @@ export function Booking() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Aqui você implementaria a lógica de envio do agendamento
+    console.log(formData);
     alert("Agendamento solicitado! Entraremos em contato para confirmar.")
   }
 

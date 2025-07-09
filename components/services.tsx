@@ -1,54 +1,61 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Clock, Star } from "lucide-react"
+import  Image  from "next/image"
+import Img1 from "../img/img1.jpg"
+import Img2 from "../img/img2.jpg"
+import Img3 from "../img/img3.jpg"
+import Img4 from "../img/img4.jpg"
+import Img5 from "../img/img5.jpg"
+import Img6 from "../img/img6.jpg"
 
 const services = [
   {
     name: "Box Braids",
     description: "Tranças soltas e versáteis, perfeitas para o dia a dia",
-    duration: "3-4 horas",
-    price: "R$ 150",
-    image: "/placeholder.svg?height=300&width=400",
+    duration: "6-8 horas",
+    price: "R$ 280",
+    image: Img3,
     popular: true,
   },
   {
-    name: "Tranças Nagô",
-    description: "Tranças tradicionais africanas com acabamento impecável",
-    duration: "2-3 horas",
+    name: "Nagô Masculina Freestyle",
+    description: "A Nagô Freestyle é pra quem curte um visual autêntico, com desenho livre e presença forte.",
+    duration: "1-2 horas",
     price: "R$ 120",
-    image: "/placeholder.svg?height=300&width=400",
+    image: Img2,
     popular: false,
   },
   {
-    name: "Fulani Braids",
-    description: "Estilo único com tranças e cabelo solto combinados",
-    duration: "4-5 horas",
-    price: "R$ 200",
-    image: "/placeholder.svg?height=300&width=400",
+    name: "French Curl",
+    description: "Tranças com raiz firme e pontas cacheadas que trazem leveza, volume e um visual elegante com atitude.",
+    duration: "6-8 horas",
+    price: "R$ 360,00",
+    image: Img5,
     popular: true,
   },
   {
-    name: "Tranças Embutidas",
-    description: "Tranças coladas ao couro cabeludo, duradouras e elegantes",
+    name: "Gypsy Braids",
+    description: "Tranças soltas com muitos cachos e volume",
     duration: "2-3 horas",
-    price: "R$ 100",
-    image: "/placeholder.svg?height=300&width=400",
+    price: "R$ 380",
+    image: Img4,
     popular: false,
   },
   {
     name: "Goddess Braids",
     description: "Tranças grossas e majestosas para um visual poderoso",
     duration: "3-4 horas",
-    price: "R$ 180",
-    image: "/placeholder.svg?height=300&width=400",
+    price: "R$ 395",
+    image: Img6,
     popular: false,
   },
   {
-    name: "Twist Out",
+    name: "Nagô ",
     description: "Técnica de torção para cabelos cacheados naturais",
     duration: "1-2 horas",
-    price: "R$ 80",
-    image: "/placeholder.svg?height=300&width=400",
+    price: "A partir de R$25,00",
+    image: Img1,
     popular: false,
   },
 ]
@@ -72,11 +79,19 @@ export function Services() {
           {services.map((service, index) => (
             <Card key={index} className="overflow-hidden hover:shadow-lg transition-shadow border-purple-100">
               <div className="relative">
-                <img
-                  src={service.image || "/placeholder.svg"}
-                  alt={service.name}
-                  className="w-full h-48 object-cover"
-                />
+                 {typeof service.image === "string" ? (
+                  <img
+                    src={service.image}
+                    alt={service.name}
+                    className="w-full h-full object-cover"
+                  />
+                ) : (
+                  <Image
+                    src={service.image}
+                    alt={service.name}
+                    className="w-full h-full object-cover"
+                  />
+                )}
                 {service.popular && (
                   <Badge className="absolute top-4 right-4 bg-gradient-to-r from-purple-500 to-violet-600">
                     <Star className="w-3 h-3 mr-1" />

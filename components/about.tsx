@@ -4,12 +4,12 @@ import { Award, Heart, Users, Clock } from "lucide-react"
 const stats = [
   {
     icon: Users,
-    number: "500+",
+    number: "100+",
     label: "Clientes Satisfeitas",
   },
   {
     icon: Award,
-    number: "5+",
+    number: "3+",
     label: "Anos de Experiência",
   },
   {
@@ -36,7 +36,7 @@ export function About() {
               </span>
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed">
-              Somos especialistas em tranças afro com mais de 5 anos de experiência. Nossa missão é realçar a beleza
+              Somos especialistas em tranças afro com mais de 3 anos de experiência. Nossa missão é realçar a beleza
               natural de cada cliente, oferecendo serviços de qualidade em um ambiente acolhedor e profissional.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed">

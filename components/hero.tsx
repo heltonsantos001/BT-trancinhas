@@ -1,6 +1,9 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
+
+import Img4 from "../img/img4.jpg"
+import Image from 'next/image';
 import { Star, Users } from "lucide-react"
 
 export function Hero() {
@@ -19,14 +22,14 @@ export function Hero() {
             <div className="space-y-4">
               <h1 className="text-4xl md:text-6xl font-bold leading-tight">
                 <span className="bg-gradient-to-r from-purple-600 to-violet-700 bg-clip-text text-transparent">
-                  Tranças Divinas
+                  BT trancinhas
                 </span>
                 <br />
                 <span className="text-gray-800">Sua beleza em boas mãos</span>
               </h1>
               <p className="text-xl text-gray-600 max-w-lg">
                 Especialistas em tranças afro, box braids, nagô e muito mais. Agende seu horário e transforme seu visual
-                com nossa equipe experiente.
+                com estilo.
               </p>
             </div>
 
@@ -58,15 +61,16 @@ export function Hero() {
               </div>
               <div className="flex items-center gap-2">
                 <Users className="w-5 h-5 text-purple-600" />
-                <span className="text-gray-600">500+ clientes</span>
+                <span className="text-gray-600">100+ clientes</span>
               </div>
             </div>
           </div>
 
           <div className="relative">
             <div className="relative z-10">
-              <img
-                src="/placeholder.svg?height=600&width=500"
+             
+              <Image
+                src={Img4}
                 alt="Mulher com tranças lindas"
                 className="rounded-2xl shadow-2xl w-full max-w-md mx-auto"
               />
